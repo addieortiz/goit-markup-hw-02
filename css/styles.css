@@ -92,14 +92,16 @@ li {
   color: white;
   background: var(--iris);
   cursor: pointer;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
+  border-color: transparent;
 }
 
 .order-button:hover,
 .order-button:focus {
-  color: var(--ocean);
+  background: var(--ocean);
 }
 
 .images-container > h2,
@@ -135,9 +137,11 @@ li {
 .filters-container .filters-button {
   color: var(--iris);
   cursor: pointer;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
+  border-color: transparent;
 }
 
 .filters-container .filters-button:hover,
@@ -149,4 +153,9 @@ li {
   color: white;
   background: var(--ocean);
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  border-color: transparent;
 }
