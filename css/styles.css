@@ -1,0 +1,162 @@
+:root {
+  --iris: #4d5ae5;
+  --navyblue: #2e2f42;
+  --ocean: #404bbf;
+  --slate: #434455;
+  --cloud: #f4f4fd;
+  --cornflower: #e7e9fc;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  text-decoration: none;
+  letter-spacing: 0.54px;
+}
+
+.web-logo {
+  color: var(--iris);
+}
+
+.studio-logo {
+  color: var(--navyblue);
+}
+
+body {
+  color: var(--slate);
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 1.12px;
+}
+
+h2 {
+  color: var(--navyblue);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+}
+
+h3 {
+  color: var(--navyblue);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.navigation-links .links {
+  color: var(--navyblue);
+  text-decoration: none;
+}
+
+.navigation-links .links:hover,
+.navigation-links .links:focus {
+  color: var(--iris);
+}
+
+.navigation-links .links:active {
+  color: var(--ocean);
+}
+
+.contacts {
+  color: var(--slate);
+  text-decoration: none;
+}
+
+.contacts:hover,
+.contacts:focus {
+  color: var(--iris);
+}
+
+.contacts:active {
+  color: var(--ocean);
+}
+
+.hero {
+  background: var(--navyblue);
+}
+
+.order-button {
+  color: white;
+  background: var(--iris);
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+}
+
+.order-button:hover,
+.order-button:focus {
+  color: var(--ocean);
+}
+
+.images-container > h2 {
+  text-align: center;
+}
+
+.team-container {
+  background: var(--cloud);
+}
+
+.team-container > h2 {
+  text-align: center;
+}
+
+.team-container .team h3 {
+  text-align: center;
+}
+
+.team-container .team p {
+  text-align: center;
+}
+
+.footer {
+  background: var(--navyblue);
+}
+
+.footer .studio-logo {
+  color: var(--cloud);
+}
+
+.footer > p {
+  color: var(--cloud);
+}
+
+.filters-container .filters {
+  background: var(--cloud);
+}
+
+.filters-button-current {
+  color: white;
+  background: var(--ocean);
+  cursor: pointer;
+}
+
+.filters-button {
+  color: var(--iris);
+  cursor: pointer;
+}
+
+.filters-button:hover,
+.filters-button:focus {
+  color: var(--ocean);
+  cursor: pointer;
+}
