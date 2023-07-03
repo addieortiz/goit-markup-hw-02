@@ -11,7 +11,7 @@
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
-  line-height: 21px;
+  line-height: 1.17;
   text-decoration: none;
   letter-spacing: 0.54px;
 }
@@ -29,7 +29,7 @@ body {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.32px;
 }
 
@@ -38,7 +38,7 @@ h1 {
   text-align: center;
   font-size: 56px;
   font-weight: 700;
-  line-height: 60px;
+  line-height: 1.07;
   letter-spacing: 1.12px;
 }
 
@@ -46,7 +46,7 @@ h2 {
   color: var(--navyblue);
   font-size: 36px;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 1.11;
   letter-spacing: 0.72px;
 }
 
@@ -54,7 +54,7 @@ h3 {
   color: var(--navyblue);
   font-size: 20px;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.2;
   letter-spacing: 0.4px;
 }
 
@@ -68,26 +68,20 @@ li {
 }
 
 .navigation-links .links:hover,
-.navigation-links .links:focus {
+.navigation-links .links:focus,
+.contacts .info:hover,
+.contacts .info:focus {
   color: var(--iris);
 }
 
-.navigation-links .links:active {
+.navigation-links .links:active,
+.contacts .info:active {
   color: var(--ocean);
 }
 
-.contacts {
+.contacts .info {
   color: var(--slate);
   text-decoration: none;
-}
-
-.contacts:hover,
-.contacts:focus {
-  color: var(--iris);
-}
-
-.contacts:active {
-  color: var(--ocean);
 }
 
 .hero {
@@ -99,7 +93,7 @@ li {
   background: var(--iris);
   cursor: pointer;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.64px;
 }
 
@@ -108,7 +102,8 @@ li {
   color: var(--ocean);
 }
 
-.images-container > h2 {
+.images-container > h2,
+.team-container > h2 {
   text-align: center;
 }
 
@@ -116,14 +111,7 @@ li {
   background: var(--cloud);
 }
 
-.team-container > h2 {
-  text-align: center;
-}
-
-.team-container .team h3 {
-  text-align: center;
-}
-
+.team-container .team h3,
 .team-container .team p {
   text-align: center;
 }
@@ -140,23 +128,25 @@ li {
   color: var(--cloud);
 }
 
-.filters-container .filters {
+.filters-container > .filters {
   background: var(--cloud);
+}
+
+.filters-container .filters-button {
+  color: var(--iris);
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+}
+
+.filters-container .filters-button:hover,
+.filters-container .filters-button:focus {
+  color: var(--ocean);
 }
 
 .filters-button-current {
   color: white;
   background: var(--ocean);
-  cursor: pointer;
-}
-
-.filters-button {
-  color: var(--iris);
-  cursor: pointer;
-}
-
-.filters-button:hover,
-.filters-button:focus {
-  color: var(--ocean);
   cursor: pointer;
 }
