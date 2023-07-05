@@ -7,7 +7,7 @@
   --cornflower: #e7e9fc;
 }
 
-.logo {
+.logo-link {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -16,12 +16,25 @@
   letter-spacing: 0.54px;
 }
 
-.web-logo {
+.logo {
   color: var(--iris);
 }
 
-.studio-logo {
+.studio {
   color: var(--navyblue);
+}
+
+.nav-menu.list {
+  list-style-type: none;
+}
+
+.contacts-menu.list {
+  list-style-type: none;
+}
+
+.nav-menu.list .page {
+  color: var(--navyblue);
+  text-decoration: none;
 }
 
 body {
@@ -33,7 +46,28 @@ body {
   letter-spacing: 0.32px;
 }
 
-h1 {
+.nav-menu.list .page:hover,
+.nav-menu.list .page:focus,
+.contacts-menu.list .item:hover,
+.contacts-menu.list .item:focus {
+  color: var(--iris);
+}
+
+.nav-menu.list .page:active,
+.contacts-menu.list .item:active {
+  color: var(--ocean);
+}
+
+.contacts-menu.list .item {
+  color: var(--slate);
+  text-decoration: none;
+}
+
+.hero.bg-hero {
+  background: var(--navyblue);
+}
+
+.hero-title {
   color: white;
   text-align: center;
   font-size: 56px;
@@ -42,53 +76,7 @@ h1 {
   letter-spacing: 1.12px;
 }
 
-h2 {
-  color: var(--navyblue);
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.72px;
-}
-
-h3 {
-  color: var(--navyblue);
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.4px;
-}
-
-li {
-  list-style-type: none;
-}
-
-.navigation-links .links {
-  color: var(--navyblue);
-  text-decoration: none;
-}
-
-.navigation-links .links:hover,
-.navigation-links .links:focus,
-.contacts .info:hover,
-.contacts .info:focus {
-  color: var(--iris);
-}
-
-.navigation-links .links:active,
-.contacts .info:active {
-  color: var(--ocean);
-}
-
-.contacts .info {
-  color: var(--slate);
-  text-decoration: none;
-}
-
-.hero {
-  background: var(--navyblue);
-}
-
-.order-button {
+.button.primary {
   color: white;
   background: var(--iris);
   cursor: pointer;
@@ -99,42 +87,89 @@ li {
   border-color: transparent;
 }
 
-.order-button:hover,
-.order-button:focus {
+.button.primary:hover,
+.button.primary:focus {
   background: var(--ocean);
 }
 
-.images-container > h2,
-.team-container > h2 {
-  text-align: center;
+.benefits.list {
+  list-style-type: none;
 }
 
-.team-container {
+.benefits.list .title {
+  color: var(--navyblue);
+}
+
+.benefits.list .description {
+  color: var(--slate);
+}
+
+/* Section 3 */
+.section .container .section-title {
+  color: var(--navyblue);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+}
+
+.what-we-do.list {
+  list-style-type: none;
+}
+
+.section.bg-team .container {
   background: var(--cloud);
 }
 
-.team-container .team h3,
-.team-container .team p {
+.section.bg-team .container .section-title {
+  color: var(--navyblue);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+}
+
+.team.list {
+  list-style-type: none;
+}
+
+.team.list .name {
+  color: var(--navyblue);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
   text-align: center;
 }
 
-.footer {
+.team.list .position {
+  color: var(--slate);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  text-align: center;
+}
+
+.page-footer.bg-footer {
   background: var(--navyblue);
 }
 
-.footer .studio-logo {
+.page-footer.bg-footer .studio-2 {
   color: var(--cloud);
 }
 
-.footer > p {
+.page-footer.bg-footer .footer-description {
   color: var(--cloud);
 }
 
-.filters-container > .filters {
+.container .filters {
   background: var(--cloud);
+  list-style-type: none;
 }
 
-.filters-container .filters-button {
+.container .filters .button.filter {
   color: var(--iris);
   cursor: pointer;
   font-size: 16px;
@@ -144,18 +179,36 @@ li {
   border-color: transparent;
 }
 
-.filters-container .filters-button:hover,
-.filters-container .filters-button:focus {
+.container .filters .button.filter:hover,
+.container .filters .button.filter:focus {
   color: var(--ocean);
 }
 
-.filters-button-current {
+.container .filters .button.filter.current {
   color: white;
   background: var(--ocean);
-  cursor: pointer;
+}
+
+.projects.list {
+  list-style-type: none;
+}
+
+.projects.list .project {
+  text-decoration: none;
+  color: var(--navyblue);
+}
+
+.projects.list .project .name {
+  color: var(--navyblue);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+}
+
+.projects.list .project .type {
+  color: var(--slate);
   font-size: 16px;
-  font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.64px;
-  border-color: transparent;
+  letter-spacing: 0.32px;
 }

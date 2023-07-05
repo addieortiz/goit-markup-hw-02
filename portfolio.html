@@ -3,31 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Homework 2 Portfolio</title>
+    <title>Homework 2</title>
   </head>
   <body>
-    <!-- header -->
-    <header>
+    <header class="page-header">
       <nav>
         <a
-          class="logo"
+          class="logo-link"
           href="./index.html"
           target="_blank"
           rel="noreferrer noopener"
-          title="logo"
+          title="logo-link"
         >
-          <span class="web-logo">WEB</span>
-          <span class="studio-logo">STUDIO</span>
+          <span class="logo">WEB</span>
+          <span class="studio">STUDIO</span>
         </a>
-        <ul class="navigation-links">
+        <ul class="nav-menu list">
           <li>
             <a
-              class="links"
+              class="page current"
               href="./index.html"
               target="_self"
               rel="noreferrer noopener"
@@ -37,7 +38,7 @@
           </li>
           <li>
             <a
-              class="links"
+              class="page"
               href="./portfolio.html"
               target="_self"
               rel="noreferrer noopener"
@@ -46,19 +47,19 @@
             >
           </li>
           <li>
-            <a class="links" href="./index.html">Contacts</a>
+            <a class="page" href="./index.html">Contacts</a>
           </li>
         </ul>
       </nav>
 
-      <ul class="contacts">
+      <ul class="contacts-menu list">
         <li>
-          <a class="info" href="mailto:info@devstudio.com"
+          <a class="item" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
         <li>
-          <a class="info" href="tel:+110001111111">+110001111111</a>
+          <a class="item" href="tel:+110001111111">+110001111111</a>
         </li>
       </ul>
     </header>
@@ -67,146 +68,152 @@
     <main>
       <!-- section 1 filter -->
       <section>
-        <div class="filters-container">
+        <div class="container">
           <ul class="filters">
             <li>
-              <button type="button" class="filters-button-current">All</button>
+              <button type="button" class="button filter current">All</button>
             </li>
             <li>
-              <button type="button" class="filters-button">Web Site</button>
+              <button type="button" class="button filter">Web Site</button>
             </li>
-            <li><button type="button" class="filters-button">App</button></li>
+            <li><button type="button" class="button filter">App</button></li>
             <li>
-              <button type="button" class="filters-button">Design</button>
+              <button type="button" class="button filter">Design</button>
             </li>
             <li>
-              <button type="button" class="filters-button">Marketing</button>
+              <button type="button" class="button filter">Marketing</button>
             </li>
           </ul>
         </div>
-      </section>
 
-      <!-- section 2 - options -->
-      <section>
-        <div class="first-row">
-          <ul class="projects-one">
-            <li>
+        <!-- 2nd part - options -->
+        <ul class="projects list">
+          <li>
+            <a href="#" class="project">
               <img
                 src="./images/row-1-project-1.jpg"
                 alt="banking-app"
-                width="360"
-                height="300"
+                width="370"
+                height="294"
               />
-              <h3>Banking App Interface Concept</h3>
-              <p>App</p>
-            </li>
-            <li>
+              <h2 class="name">Banking App Interface Concept</h2>
+              <p class="type">App</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="project">
               <img
                 src="./images/row-1-project-2.jpg"
                 alt="cashless-payment"
-                width="360"
-                height="300"
+                width="370"
+                height="294"
               />
-              <h3>Cashless Payment</h3>
-              <p>Marketing</p>
-            </li>
-            <li>
+              <h2 class="name">Cashless Payment</h2>
+              <p class="type">Marketing</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="project">
               <img
                 src="./images/row-1-project-3.jpg"
                 alt="meditation-app"
-                width="360"
-                height="300"
+                width="370"
+                height="294"
               />
-              <h3>Meditation App</h3>
-              <p>App</p>
-            </li>
-          </ul>
-        </div>
+              <h2 class="name">Meditation App</h2>
+              <p class="type">App</p>
+            </a>
+          </li>
 
-        <div class="second-row">
-          <ul class="projects-two">
-            <li>
+          <li>
+            <a href="#" class="project">
               <img
                 src="./images/row-2-project-1.jpg"
                 alt="taxi-service"
-                width="360"
-                height="300"
+                width="370"
+                height="294"
               />
-              <h3>Taxi Service</h3>
-              <p>Marketing</p>
-            </li>
-            <li>
+              <h2 class="name">Taxi Service</h2>
+              <p class="type">Marketing</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="project">
               <img
                 src="./images/row-2-project-2.jpg"
                 alt="screen-illustrations"
-                width="360"
-                height="300"
+                width="370"
+                height="294"
               />
-              <h3>Screen Illustrations</h3>
-              <p>Design</p>
-            </li>
-            <li>
+              <h2 class="name">Screen Illustrations</h2>
+              <p class="type">Design</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="project">
               <img
                 src="./images/row-2-project-3.jpg"
                 alt="online-courses"
-                width="360"
-                height="300"
+                width="370"
+                height="294"
               />
-              <h3>Online Courses</h3>
-              <p>Marketing</p>
-            </li>
-          </ul>
-        </div>
+              <h2 class="name">Online Courses</h2>
+              <p class="type">Marketing</p>
+            </a>
+          </li>
 
-        <div class="third-row">
-          <ul class="projects-three">
-            <li>
+          <li>
+            <a href="#" class="project">
               <img
                 src="./images/row-3-project-1.jpg"
                 alt="instagram-stories-concept"
-                width="360"
-                height="300"
+                width="370"
+                height="294"
               />
-              <h3>Instagram Stories Concept</h3>
-              <p>Design</p>
-            </li>
-            <li>
+              <h2 class="name">Instagram Stories Concept</h2>
+              <p class="type">Design</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="project">
               <img
                 src="./images/row-3-project-2.jpg"
                 alt="organic-food"
-                width="360"
-                height="300"
+                width="370"
+                height="294"
               />
-              <h3>Organic Food</h3>
-              <p>Web Site</p>
-            </li>
-            <li>
+              <h2 class="name">Organic Food</h2>
+              <p class="type">Web Site</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="project">
               <img
                 src="./images/row-3-project-3.jpg"
                 alt="fresh-coffee"
-                width="360"
-                height="300"
+                width="370"
+                height="294"
               />
-              <h3>Fresh Coffee</h3>
-              <p>Web Site</p>
-            </li>
-          </ul>
-        </div>
+              <h2 class="name">Fresh Coffee</h2>
+              <p class="type">Web Site</p>
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
     <footer>
-      <div class="footer">
+      <div class="page-footer bg-footer">
         <a
-          class="logo"
+          class="logo-link"
           href="./index.html"
           target="_blank"
           rel="noreferrer noopener"
-          title="logo"
+          title="logo-link"
         >
-          <span class="web-logo">WEB</span>
-          <span class="studio-logo">STUDIO</span>
+          <span class="logo">WEB</span>
+          <span class="studio-2">STUDIO</span>
         </a>
-        <p>
+        <p class="footer-description">
           Increase the flow of customers and<br />sales for your business with
           digital<br />marketing & growth solutions.
         </p>
