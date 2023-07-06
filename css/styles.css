@@ -175,6 +175,11 @@ body {
   background-color: var(--ocean);
 }
 
+.button.filter.current {
+  color: white;
+  background: var(--ocean);
+}
+
 .project {
   text-decoration: none;
 }
