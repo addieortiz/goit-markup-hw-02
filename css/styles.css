@@ -8,28 +8,27 @@
 }
 
 .logo-link {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  line-height: 1.2;
+  font-size: 0;
   text-decoration: none;
-}
-
-.logo {
-  color: var(--iris);
 }
 
 .logo-link > span {
   font-size: 26px;
 }
 
-.studio {
-  color: var(--navyblue);
-  font-weight: 700;
-}
-
 .logo,
 .studio {
   display: inline-block;
+  color: var(--iris);
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.studio,
+.studio-2 {
+  color: var(--navyblue);
+  font-weight: 700;
 }
 
 .list {
