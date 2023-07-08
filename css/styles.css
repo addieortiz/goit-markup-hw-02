@@ -156,10 +156,6 @@ body {
   color: var(--cloud);
 }
 
-.container .filters {
-  background: var(--cloud);
-}
-
 .button.filter {
   color: var(--iris);
   background-color: #f5f4fa;
@@ -170,14 +166,9 @@ body {
 
 .button.filter:hover,
 .button.filter:focus,
-.button.filter:current {
+.button.filter.current {
   color: var(--cloud);
   background-color: var(--ocean);
-}
-
-.button.filter.current {
-  color: white;
-  background: var(--ocean);
 }
 
 .project {
